@@ -1,6 +1,6 @@
 ** RUN **
 
-1.install LOVE2D luajit
+1.install LOVE2D luajit and remove the test save file "data.json"
 
 2.run straight
 
