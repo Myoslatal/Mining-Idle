@@ -8,7 +8,6 @@ require("src.lib.readline")                    --0,4
 Layout = require("src.lib.layout")             --0,5
 Actor = require("src.lib.layoutActor")         --0,6
 json = require("src.lib.json.json")            --0,7
-Big = require("src.lib.bignumber")             --0,8
 BigDouble = require("src.lib.bigdouble")       --0,9
 --depend 0 ,1
 require("vars")                                -- depend 0,1 / 1,0
