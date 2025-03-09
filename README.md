@@ -5,7 +5,7 @@
 2.run straight
 
 ```bash
-love ./main.lua
+love .
 ```
 
 3.compile and run
