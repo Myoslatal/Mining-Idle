@@ -28,4 +28,3 @@ done
 cp -r resources/* ../build/resources/
 cp main.lua ../build/main.lua
 rm ../build/defines.lua
-echo "编译完成！错误日志见: build/compile_errors.log"
