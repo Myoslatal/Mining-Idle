@@ -20,7 +20,7 @@ local bigdouble = {
             base = base / 10
             multi = multi + 1
         end
-        while math.abs(base) <= 1 do
+        while math.abs(base) < 1 do
             base = base * 10
             multi = multi - 1
         end
@@ -49,7 +49,7 @@ local bigdouble = {
             multi = multi + 1
         end
 
-        while math.abs(base) <= 1 do
+        while math.abs(base) < 1 do
             base = base * 10
             multi = multi - 1
         end

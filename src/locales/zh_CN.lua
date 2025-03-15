@@ -7,7 +7,7 @@ local zhcn = {
         "你可以在这里找到更多的信息。",
         "这里没有游戏"
     },
-    ironamount = "你拥有%.2e铁",
+    ironamount = "你拥有%s铁",
     getIronButtonText = "获得铁"
 }
 return zhcn

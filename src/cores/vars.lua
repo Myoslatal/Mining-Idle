@@ -1,5 +1,9 @@
 local vars = {
     data = {
+        ironamount = {
+            base = 0,
+            multi = 0
+        }
     }
 }
 

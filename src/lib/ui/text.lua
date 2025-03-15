@@ -10,6 +10,7 @@ text.init = function(self, args)
     self.y = args[2]
     self.content = args[3]
     self.color = args[4] or { 1, 1, 1, 1 }
+    self.updateF = args[5] or function() return self.content end
 end
 
 function text:draw()
@@ -19,7 +20,7 @@ function text:draw()
 end
 
 function text:update()
-
+    self:updateText(self:updateF())
 end
 
 function text:updateText(newtext)

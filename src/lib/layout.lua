@@ -30,4 +30,10 @@ function layout:keypress()
     end
 end
 
+function layout:add(args)
+    for key, var in pairs(args) do
+        table.insert(self.data, var)
+    end
+end
+
 return layout
