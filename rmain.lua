@@ -17,6 +17,8 @@ function love.update(dt)
     end
     Vars.mainActivity.update()
     Dt = dt
+
+    Tick:onetick()
 end
 
 function love.load()

@@ -64,7 +64,7 @@ local bigdouble = {
             multi = multi + 1
         end
 
-        while math.abs(base) <= 1 do
+        while math.abs(base) < 1 do
             base = base * 10
             multi = multi - 1
         end
@@ -78,7 +78,7 @@ local bigdouble = {
             multi = multi + 1
         end
 
-        while math.abs(base) <= 1 do
+        while math.abs(base) < 1 do
             base = base * 10
             multi = multi - 1
         end
@@ -99,7 +99,7 @@ local bigdouble = {
             multi = multi + 1
         end
 
-        while math.abs(base) <= 1 do
+        while math.abs(base) < 1 do
             base = base * 10
             multi = multi - 1
         end
@@ -109,21 +109,35 @@ local bigdouble = {
         if base > 0 and base2 < 0 then
             return true
         end
+        if base < 0 and base2 > 0 then
+            return false
+        end
         if multi > multi2 then
             return true
-        elseif base > base2 then
+        end
+        if multi < multi2 then
+            return false
+        end
+        if base > base2 then
             return true
         end
         return false
     end,
     smaller = function(base, multi, base2, multi2)
+        if base > 0 and base2 < 0 then
+            return false
+        end
         if base < 0 and base2 > 0 then
             return true
         end
+        if multi > multi2 then
+            return false
+        end
         if multi < multi2 then
             return true
-        elseif base < base2 then
-            return true
+        end
+        if base > base2 then
+            return false
         end
         return false
     end,

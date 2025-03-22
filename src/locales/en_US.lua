@@ -7,7 +7,8 @@ local zhcn = {
         "Sure, Theres many information",
         "Papers please"
     },
-    ironamount = "You have %.2e Iron",
-    getIronButtonText = "Get an Iron"
+    ironamount = "You have %s Iron",
+    getIronButtonText = "Get an Iron",
+    IronMinerUpgrade = "Iron Miner"
 }
 return zhcn

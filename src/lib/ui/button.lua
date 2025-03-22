@@ -7,7 +7,8 @@ function button:init(args)
     self.h = args[4]
 
     self.color = args[5] or { 0.2, 0.2, 0.2, 1 }
-    self.text = new(UI.text, { self.x + self.prefixX, self.y + self.prefixY, args[6], { 1, 1, 1, 1 } })
+    self.text = new(UI.text,
+        { self.x + self.prefixX, self.y + self.prefixY, args[6], { 1, 1, 1, 1 }, function() end, args[8] })
     self.callback = args[7]
 end
 
@@ -24,7 +25,7 @@ end
 function button:click()
     --use Math.inBlock
     if MathTool.inBlock(Vars.mx, Vars.my, self.x, self.y, self.x + self.w, self.y + self.h) then
-        self.callback()
+        self.callback(self)
     end
 end
 

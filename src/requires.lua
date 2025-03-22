@@ -18,4 +18,5 @@ UI.button = require("src.lib.ui.button")       --deoend 0,6 / 1,3
 --depend 1,2
 DataVar = require("src.cores.vars")            -- depend 1,0/2,0
 require("src.global.mainactivity")             -- depend 1,0/2,0
---highest level
+--depend 2,3
+Tick = require("src.cores.mine.tick")          -- depend 2,0/3,0

@@ -3,6 +3,13 @@ local vars = {
         ironamount = {
             base = 0,
             multi = 0
+        },
+        ironminer = {
+            base = 1,
+            multi = 0,
+            delay = 1,
+            multipiebase = 1,
+            multipiemulti = 0
         }
     }
 }
