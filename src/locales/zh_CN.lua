@@ -10,5 +10,6 @@ local zhcn = {
     ironamount = "你拥有%s铁",
     getIronButtonText = "获得铁",
     IronMinerUpgrade = "矿工,当前%s个,价格%s,乘数%s",
+    beaconInfo = "%d层为开采速度获取-%d秒加成"
 }
 return zhcn

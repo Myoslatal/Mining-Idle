@@ -162,6 +162,9 @@ local bigdouble = {
 
         str = str .. string.format("%.2f", base) .. "e" .. multi
         return str
+    end,
+    tonumber = function(base, multi)
+        return base * 10 ^ multi
     end
 }
 return bigdouble

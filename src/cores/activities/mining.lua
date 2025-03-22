@@ -14,6 +14,9 @@ layout:add({
         DataVar.data.ironamount.base, DataVar.data.ironamount.multi = BigDouble.add(DataVar.data.ironamount.base,
             DataVar.data.ironamount.multi, 1, 0)
     end }),
+    new(UI.button, { Vars.ScreenW / 2 + 130, 100, 100, 50, { 1, 1, 1, 0.5 }, "信标", function()
+        Vars.mainActivity = require("src.cores.activities.beacon")
+    end }),
     new(UI.rectangle, { Vars.ScreenW / 2 + 10, 250, Vars.ScreenW, 25, { 0.2, 0.2, 0.2, 0.5 } }),
     new(UI.button,
         { Vars.ScreenW / 2 + 10, 275, 1000, 20, { 1, 1, 1, 0.5 }, Strings.IronMinerUpgrade, function()

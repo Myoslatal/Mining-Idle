@@ -15,8 +15,10 @@ UI = {}
 UI.text = require("src.lib.ui.text")           --deoend 0,6 / 1,1
 UI.rectangle = require("src.lib.ui.rectangle") --deoend 0,6 / 1,2
 UI.button = require("src.lib.ui.button")       --deoend 0,6 / 1,3
+UI.sprite = require("src.lib.ui.sprite")       --deoend 0,6 / 1,4
 --depend 1,2
 DataVar = require("src.cores.vars")            -- depend 1,0/2,0
 require("src.global.mainactivity")             -- depend 1,0/2,0
+UI.progress = require("src.lib.ui.progress")
 --depend 2,3
-Tick = require("src.cores.mine.tick")          -- depend 2,0/3,0
+Tick = require("src.cores.mine.tick") -- depend 2,0/3,0

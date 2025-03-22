@@ -11,4 +11,9 @@ Vars.mx = 0
 Vars.my = 0
 Vars.scaleX = 1
 Vars.scaleY = 1
+
+love.graphics.setDefaultFilter("nearest", "nearest")
+Vars.textures = {
+    beacon = love.graphics.newImage("resources/images/beacon.png"),
+}
 Dt = 0

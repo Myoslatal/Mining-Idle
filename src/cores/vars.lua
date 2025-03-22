@@ -10,6 +10,13 @@ local vars = {
             delay = 1,
             multipiebase = 1,
             multipiemulti = 0
+        },
+        beacon = {
+            level = 0,
+            fillprogressBase = 0,
+            fillprogressMulti = 0,
+            targetBase = 0,
+            targetMulti = 0,
         }
     }
 }
